@@ -244,13 +244,13 @@ export default function CompleteCheckout() {
           </p>
         </div>
         <div className="button-group d-flex flex-column mx-auto">
-          <Link href="/member">
-            <a
-              className="btn btn-dashboard fw-medium text-lg text-white rounded-pill mb-16"
-              role="button"
-            >
+          <Link
+            href="/member"
+            className="btn btn-dashboard fw-medium text-lg text-white rounded-pill mb-16"
+            role="button">
+            
               My Dashboard
-            </a>
+            
           </Link>
           <a
             className="btn btn-whatsapp fw-medium text-lg color-palette-1 rounded-pill"

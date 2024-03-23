@@ -52,10 +52,12 @@ export default function Auth() {
           </a>
 
           <ul className="dropdown-menu border-0" aria-labelledby="dropdownMenuLink">
-            <li><Link href="/member"><a className="dropdown-item text-lg color-palette-2">My Profile</a></Link></li>
-            <li><Link href="/"><a className="dropdown-item text-lg color-palette-2" href="#">Wallet</a></Link></li>
+            <li><Link href="/member" className="dropdown-item text-lg color-palette-2">My Profile</Link></li>
+            <li><Link href="/" className="dropdown-item text-lg color-palette-2">Wallet</Link></li>
             <li>
-              <Link href="/member/edit-profile"><a className="dropdown-item text-lg color-palette-2" href="#">Account Settings</a></Link>
+              <Link
+                href="/member/edit-profile"
+                className="dropdown-item text-lg color-palette-2">Account Settings</Link>
             </li>
             <li onClick={onLogout}><a className="dropdown-item text-lg color-palette-2" href="#">Log Out</a></li>
           </ul>
@@ -65,15 +67,14 @@ export default function Auth() {
   }
   return (
     <li className="nav-item my-auto">
-      <Link href="/sign-in">
-        <a
-          className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
-          role="button"
-        >
+      <Link
+        href="/sign-in"
+        className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
+        role="button">
+        
           Sign In
-        </a>
+        
       </Link>
     </li>
-
   );
 }
